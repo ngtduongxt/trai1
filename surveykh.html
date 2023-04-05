@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    .b {
+      text-align: center;
+      border: 1px solid black;
+    }
+    .b td{
+      width: 7%;
+    }
+    .a td:nth-child(even){
+      text-align: left;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+<h2>Market Research Survey</h2>
+Please take a few moments to complete this satisfaction survey.
+<hr>
+<label><strong>What is your age range?</strong></label><br>
+<select style="width: 200px">
+  <option value="18-24">18-24</option>
+  <option value="25-34">25-34</option>
+  <option value="35-50">35-50</option>
+  <option value="50+">50+</option>
+</select>
+<br>
+<br>
+<label><strong>What is your yearly income range?</strong></label><br>
+<select style="width: 200px">
+  <option value="0-25,000">$0-$25,000</option>
+  <option value="$25,001 - $50,000">$25,001 - $50,000</option>
+  <option value="$50,001 - $100,000">$50,001 - $100,000</option>
+  <option value="$100,000+">$100,000+</option>
+</select>
+<br><br>
+<lable><strong>Gender</strong></lable><br>
+<tr>
+  <td><input type="radio" name="gender"> Male</td>
+</tr><br>
+<tr>
+  <td><input type="radio" name="gender"> Fenmale</td>
+</tr>
+<br>
+<br>
+<label><strong>Which of the following products have your purchased in the last 2 months. Please check all that apply.</strong></label>
+<br>
+<input type="checkbox">Product 1<br>
+<input type="checkbox">Product 2<br>
+<input type="checkbox">Product 3<br>
+<br>
+<lable><strong>How often would you use our new product?</strong></lable><br>
+<tr>
+  <td><input type="radio" name="product"> Daily</td></tr><br>
+<tr>
+  <td><input type="radio" name="product"> Weekly</td></tr><br>
+<tr>
+  <td><input type="radio" name="product"> Monthly</td></tr>
+<br><br>
+<lable><strong>How often would you use our new product?</strong></lable><br>
+<table>
+  <tr>
+    <td>$</td>
+    <td><input type="text" name="dollars" size="5">
+    <td>-</td>
+    <td><input type="text" name="cents" size="1"></td>
+  </tr>
+  <tr class="a">
+    <td></td>
+    <td>Dollars</td>
+    <td></td>
+    <td>Cents</td>
+  </tr>
+</table>
+<br>
+<lable><strong>How often would you use our new product?</strong></lable><br>
+<textarea rows="6" cols="183"></textarea><br>
+<br>
+<lable><strong>Please rate your level of agreement with the following statements.</strong></lable><br>
+<table class="b" border="1">
+  <tr>
+    <th></th>
+    <th>Strongly Disagree</th>
+    <th>Disagree</th>
+    <th>Agree</th>
+    <th>Strongly Agree</th>
+  </tr>
+  <tr>
+    <td>Our products are priced fairly.</td>
+    <td><input type="radio" name="pf"><br>1</td>
+    <td><input type="radio" name="pf"><br>2</td>
+    <td><input type="radio" name="pf"><br>3</td>
+    <td><input type="radio" name="pf"><br>4</td>
+  </tr>
+  <tr>
+  <td>Our products are high quality.</td>
+  <td><input type="radio" name="hq"><br>1</td>
+  <td><input type="radio" name="hq"><br>2</td>
+  <td><input type="radio" name="hq"><br>3</td>
+  <td><input type="radio" name="hq"><br>4</td>
+  </tr>
+  <tr>
+    <td>You would recommend our product to a friend or coworker.</td>
+    <td><input type="radio" name="fc"><br>1</td>
+    <td><input type="radio" name="fc"><br>2</td>
+    <td><input type="radio" name="fc"><br>3</td>
+    <td><input type="radio" name="fc"><br>4</td>
+  </tr>
+</table><br>
+<button>Submid</button>
+</body>
+</html>
